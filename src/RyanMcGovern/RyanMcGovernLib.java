@@ -10,4 +10,18 @@ public class RyanMcGovernLib {
             return false;
         }
     }
+
+    public static String cutOut (String mainStr, String subStr) {
+        int cutIndex = mainStr.indexOf(subStr);
+        String mainStrBefore = mainStr.substring(0, cutIndex);
+        String mainStrAfter = mainStr.substring(cutIndex + subStr.length());
+        return mainStrBefore+mainStrAfter;
+    }
+
+    public static int sumUpTo(int n){
+        for (int i=0; i<n; i++){
+            n+=i;
+        }
+        return n;
+    }
 }
