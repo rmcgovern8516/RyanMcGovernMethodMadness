@@ -16,7 +16,7 @@ public class RyanMcGovernLib {
         return mainStrBefore+mainStrAfter;
     }
 
-    public static int sumUpTo(int n){
+    public static int sumUpTo (int n){
         int out = 0;
         int i=1;
         while (i<=n){
@@ -34,5 +34,18 @@ public class RyanMcGovernLib {
             n++;
         }
         return n;
+    }
+
+    public static boolean isPalindrome (String str){
+        String reverse = "";
+
+        for (int i = str.length()-1; i>=0; i--){
+            reverse+= str.substring(i,i+1);
+        }
+        if (reverse.equals(str)){
+            return true;
+        } else {
+            return false;
+        }
     }
 }

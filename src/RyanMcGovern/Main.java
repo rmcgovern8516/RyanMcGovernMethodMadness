@@ -12,5 +12,8 @@ public class Main {
 
         System.out.print("The multiplication table for this base from 0 to the range is: ");
         RyanMcGovernLib.multiplicationTable(5,3); //multiplicationTable
+        System.out.println("");
+
+        System.out.println("True or false, the inputted word is a Palindrome: "+RyanMcGovernLib.isPalindrome("racecar"));
     }
 }
