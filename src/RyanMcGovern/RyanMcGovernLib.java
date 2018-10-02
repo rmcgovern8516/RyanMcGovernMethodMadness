@@ -5,7 +5,7 @@ public class RyanMcGovernLib {
             String month = date.substring(0,2);
             String day = date.substring(3,5);
             String year = date.substring(6);
-            return (day+" - "+month+" - "+year);
+            return (day+"-"+month+"-"+year);
 
     }
 
