@@ -1,14 +1,12 @@
 package RyanMcGovern;
 
 public class RyanMcGovernLib {
-    public static boolean Test(int number){
-        if (number >= 0){
-            System.out.println("The number "+number+" is positive.");
-            return true;
-        } else {
-            System.out.println("The number "+number+" is negative.");
-            return false;
-        }
+    public static String dateStr (String date){
+            String month = date.substring(0,2);
+            String day = date.substring(3,5);
+            String year = date.substring(6);
+            return (day+" - "+month+" - "+year);
+
     }
 
     public static String cutOut (String mainStr, String subStr) {
@@ -19,8 +17,21 @@ public class RyanMcGovernLib {
     }
 
     public static int sumUpTo(int n){
-        for (int i=0; i<n; i++){
-            n+=i;
+        int out = 0;
+        int i=1;
+        while (i<=n){
+            out+=i;
+            i++;
+        }
+        return out;
+    }
+
+    public static int multiplicationTable(int base, int range){
+        int n = 0;
+
+        while (n<=range) {
+            System.out.print(base * n + " ");
+            n++;
         }
         return n;
     }
